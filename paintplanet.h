@@ -2,12 +2,13 @@
 #define PAINTPLANET_H
 
 #include <QQuickPaintedItem>
+#include <QPainter>
 
 class PaintPlanet: public QQuickPaintedItem
 {
     Q_OBJECT
 public:
-    PaintPlanet();
+    PaintPlanet(QQuickItem * parent = nullptr);
     ~PaintPlanet();
 
     void paint(QPainter *painter);
